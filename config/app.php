@@ -84,6 +84,9 @@ return [
 
     'locale' => 'en',
 
+    // Set currency to PHP for Philippine currency
+    'currency' => 'PHP',
+
     /*
     |--------------------------------------------------------------------------
     | Application Fallback Locale
