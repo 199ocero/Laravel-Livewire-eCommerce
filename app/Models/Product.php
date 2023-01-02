@@ -15,4 +15,10 @@ class Product extends Model
     {
         return Money::PHP($this->price);
     }
+
+    // Function for product variations
+    public function variations()
+    {
+        return $this->hasMany(Variation::class);
+    }
 }
