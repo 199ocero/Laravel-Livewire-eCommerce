@@ -18,7 +18,7 @@ class ProductDropdown extends Component
     // when there is something change in dropdown this function will run
     public function updatedSelectedVariation()
     {
-        dd($this->getSelectedVariationModelProperty());
+        // dd($this->getSelectedVariationModelProperty());
     }
     public function render()
     {
