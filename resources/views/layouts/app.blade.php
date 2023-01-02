@@ -38,7 +38,7 @@
     </div>
 
     {{-- Scripts --}}
-    @livewireStyles
+    @livewireScripts
 </body>
 
 </html>

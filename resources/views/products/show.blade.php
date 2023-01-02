@@ -20,7 +20,8 @@
                         </div>
 
                         <div class="mt-6">
-                            {{ $product->variations->sortBy('order')->groupBy('type')->first() }}
+                            {{-- Livewire component. This is your will pass the variable to our product --}}
+                            <livewire:product-selector :product="$product" />
                         </div>
                     </div>
                 </div>
