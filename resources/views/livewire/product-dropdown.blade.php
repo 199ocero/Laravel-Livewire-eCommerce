@@ -16,7 +16,7 @@
     {{-- make sure that there is ? at the end of function so that this will not be null --}}
     {{-- use children to show all of the children of selected variant --}}
     @if ($this->getSelectedVariationModelProperty()?->children->count())
-        {{-- use key binding so that livewire will be confused as to what children will show --}}
+        {{-- use key binding so that livewire will not be confused as to what children will show --}}
         <livewire:product-dropdown :variations="$this->getSelectedVariationModelProperty()?->children->sortBy('order')" :key="$selectedVariation" />
     @endif
 </div>
