@@ -7,8 +7,9 @@
         <option value="" disabled>Choose an option</option>
 
         @foreach ($variations as $variation)
-            <option value="{{ $variation->id }}">
-                {{ $variation->title }}
+            <option value="{{ $variation->id }}" {{ $variation->outOfStock() ? 'disabled' : '' }}>
+                {{ $variation->title }} {{ $variation->lowStock() ? '(Low of Stock)' : '' }}
+                {{ $variation->outOfStock() ? '(Out of Stock)' : '' }}
             </option>
         @endforeach
     </x-select>
