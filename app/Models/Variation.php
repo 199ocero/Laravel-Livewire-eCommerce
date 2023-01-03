@@ -22,4 +22,10 @@ class Variation extends Model
     {
         return Money::PHP($this->price);
     }
+
+    // relationship for stocks
+    public function stocks()
+    {
+        return $this->hasMany(Stock::class);
+    }
 }
